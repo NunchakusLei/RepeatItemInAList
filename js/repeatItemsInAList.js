@@ -5,6 +5,10 @@
  */
 
 $(function() {
-    
+    var div = document.getElementById('blocks'),
+        clone = div.cloneNode(true);
+    clone.id = "some_id";
+    document.body.appendChild(clone);
 });
+
 
