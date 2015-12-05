@@ -7,7 +7,16 @@
 $(function() {
     var div = document.getElementById('blocks'),
         clone = div.cloneNode(true);
-    clone.id = "some_id";
+//    clone.id = "some_id";
+    
+    // append to the block container only
+    $('#blockContainer').append(clone);
+    
+    clone = div.cloneNode(true);
+    $('#blockContainer').append(clone);
+    
+    // append to the body
+    clone = div.cloneNode(true);
     document.body.appendChild(clone);
 });
 
